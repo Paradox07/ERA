@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/apploginbg">
+    <ImageView
+        android:id="@+id/LoginLogo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/era"
+        />
+
+    <TextView
+        android:id="@+id/login_era"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="40dp"
+        android:text="ERA"
+        android:transitionName="logo_Text"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:fontFamily="@font/tinos"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/loginslogan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="40dp"
+        android:text="Assistant to Redefine Education"
+        android:transitionName="logo_Slogan"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:fontFamily="cursive"
+        android:textStyle="normal"
+        android:textAlignment="viewStart"
+        />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/tinos"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:transitionName="Sign_up" />
+
+    <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#00000000">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loginusername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Username"
+                app:hintTextColor="#00ffff"
+                android:transitionName="Username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tinos"
+                    android:textStyle="bold"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+                app:hintTextColor="#00ffff"
+                android:transitionName="password_trans"
+            app:passwordToggleEnabled="true">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:fontFamily="@font/tinos"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forgot Password"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:fontFamily="@font/tinos"
+            android:textSize="17dp"
+            android:elevation="0dp"
+            android:transitionName="forgotpasswordtrans"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:onClick="loginUser"
+            android:background="#000"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="@font/tinos"
+            android:transitionName="button_Trans"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:id="@+id/callsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="New user ? Sign Up"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:transitionName="login_signup_transition"
+            android:elevation="0dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/loginbar"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/ERA2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ERA © 2020"
+            android:textAlignment="center"
+            android:textColor="#dccdc0"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

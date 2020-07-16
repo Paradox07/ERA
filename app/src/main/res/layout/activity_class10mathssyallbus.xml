@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".class10mathssyallbus"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f5f5f5">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:background="@drawable/homepagebg"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:padding="5dp"
+                android:src="@drawable/courses_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:gravity="start"
+                android:text="Mathematics"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="start"
+                android:text="Syllabus-CBSE Class 10th"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:fontFamily="@font/tinos"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Unit"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/tinos"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="Topic"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:text="1"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="NUMBER SYSTEM"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#8b8989"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="REAL NUMBERS"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="2"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="ALGEBRA"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="POLYNOMIALS "
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="PAIR OF LINEAR EQUATIONS IN TWO VARIABLE"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="QUADRATIC EQUATIONS"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="ARITHMETIC PROGRESSIONS"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="3"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="COORDINATE GEOMETRY"
+                            android:textColor="#8b8989"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="LINES( IN TWO DIMENSION) "
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="4"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="GEOMETRY"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#8b8989"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="TRIANGLES"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="CIRCLES"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="CONSTRUCTIONS"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="5"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="TRIG0NOMETRY"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#8b8989"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="INTRODUCTION TO TRIGONOMETRY"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="TRIGONOMETRY IDENTITIES"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="6"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="MENSURATION"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#8b8989"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="AREAS RELATED TO CIRCLES SURFACE AREAS AND VOLUMES"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="7"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="STATISTICS &amp; PROBABILITY"
+                            android:textColor="#8b8989"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="STATISTICS &amp; PROBABILITY"
+                            android:textColor="#8b8989"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

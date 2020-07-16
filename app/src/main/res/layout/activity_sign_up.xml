@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:background="@drawable/apploginbg">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/signuplogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/era"/>
+
+    <TextView
+        android:id="@+id/Signup_era"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="40dp"
+        android:text="ERA"
+        android:transitionName="logo_Text"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:fontFamily="@font/tinos"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/Signupslogan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="40dp"
+        android:text="Assistant to Redefine Education"
+        android:transitionName="logo_Slogan"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:fontFamily="cursive"
+        android:textStyle="normal"
+        android:textAlignment="viewStart"/>
+
+    <TextView
+        android:id="@+id/Signuptxt"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/tinos"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="#00000000">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signupfullname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="FullName"
+            app:hintTextColor="#00ffff"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signupusername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Username"
+            app:hintTextColor="#00ffff"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signupemail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="email"
+            app:hintTextColor="#00ffff"
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signupphone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Phone No."
+            app:hintTextColor="#00ffff"
+           >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signuppassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            app:hintTextColor="#00ffff"
+            app:passwordToggleEnabled="true"
+            android:transitionName="password_trans"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Signupbutton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#000"
+        android:text="signup"
+        android:textStyle="bold"
+        android:fontFamily="@font/tinos"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:transitionName="button_Trans"
+        android:onClick="registerUser" />
+    <TextView
+        android:id="@+id/ERA2020"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ERA © 2020"
+        android:textAlignment="center"
+        android:textColor="#dccdc0"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/tinos"
+        />
+</LinearLayout>
+</ScrollView>

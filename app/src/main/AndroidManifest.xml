@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.arya.era">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/era_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/era_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".apptitude_and_logical_reasoning_take_test"></activity>
+        <activity android:name=".soft_skills_take_test" />
+        <activity android:name=".science_take_test" />
+        <activity android:name=".Maths_take_test" />
+        <activity android:name=".hiring_details" />
+        <activity android:name=".Take_Test" />
+        <activity android:name=".science10pdfopener" />
+        <activity android:name=".science9pdfopener" />
+        <activity android:name=".science8pdfopener" />
+        <activity android:name=".science7pdfopener" />
+        <activity android:name=".maths10pdfopener" />
+        <activity android:name=".maths9pdfopener" />
+        <activity android:name=".maths8pdfopener" />
+        <activity android:name=".maths7pdfopener" />
+        <activity android:name=".science10th_studymaterial" />
+        <activity android:name=".science9th_studymaterial" />
+        <activity android:name=".science8th_studymaterial" />
+        <activity android:name=".science7thStudymaterial" />
+        <activity android:name=".maths10th_studymaterial" />
+        <activity android:name=".maths9th_studymaterial" />
+        <activity android:name=".maths8th_studymaterial" />
+        <activity android:name=".maths7thStudymaterial" />
+        <activity android:name=".science_study_material_class" />
+        <activity android:name=".maths_study_material_class" />
+        <activity android:name=".class10sciencesyllabus" />
+        <activity android:name=".class9sciencesyllabus" />
+        <activity android:name=".class8sciencesyllabus" />
+        <activity android:name=".class7sciencesyllabus" />
+        <activity android:name=".class10mathssyallbus" />
+        <activity android:name=".class9mathssyallbus" />
+        <activity android:name=".class8mathssyallbus" />
+        <activity android:name=".class7mathssyallbus" />
+        <activity android:name=".Science_class" />
+        <activity android:name=".maths_class" />
+        <activity android:name=".SoftSkills" />
+        <activity android:name=".Aptitude_and_Logical_Reasoning" />
+        <activity android:name=".Science" />
+        <activity android:name=".Mathematics" />
+        <activity android:name=".homepage" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

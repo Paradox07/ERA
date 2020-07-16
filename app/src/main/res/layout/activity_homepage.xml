@@ -1,0 +1,2738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end"
+    >
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_View"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+             />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:background="@drawable/homepagebg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/tinos"
+            android:text="Brought to you by,"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif"
+            android:text="ERA"
+            android:textColor="#ffffff"
+            android:textSize="70dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="cursive"
+            android:text="Assistant to Redefine Education"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/homepage_logo"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="-30dp"
+            android:padding="5dp"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="30dp"
+                app:cardBackgroundColor="#000000"
+                android:layout_marginTop="5dp">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="380dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                />
+
+            <ImageButton
+                android:id="@+id/start_again"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/replay_icon"
+                android:background="#00000000"
+                android:layout_gravity="end"
+                android:padding="50dp"
+                />
+        </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="What is Era?"
+                android:textColor="#000000"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="ERA is brand new and extremely helpful platform where students can learn and grow their potentials even when they are away from their schools. ERA has extremely qualified faculty for every subject that a student might need growing up. So what, if you missed your school we still got you covered. You can learn any subject anywhere at any time."
+                android:textColor="#8b8989"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Why Era?"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+        android:layout_marginTop="20dp"
+        />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:src="@drawable/refund_image"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/only_seven_students"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Only 7 students are present per Class."
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="ERA helps the students to clear their doubts and concept properly with a Direct Interaction with the Teacher."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/same_level_students"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="All the students in a Class are of same level."
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="ERA helps the students to improve their skills in a personalized manner with the proper competition."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/best_teachers"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Best Teacher of ERA at your Home."
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="ERA have best faculty from different states of India to clear the doubts of the students in the personalized space of student."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/personel_mentor"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Personal Mentor for every Student &amp; Parents. "
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Personal Mentor is available for every student to guide them, how to convert their weakness into strength which helps them to achieve their goals and provide the weekly report to the parents about the progress of Student."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/overall_deployment_of_students"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Overall development of Student."
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="ERA prepares the student according to the upcoming competition, we work on Soft skills and Aptitude &amp; Logical Reasoning with Maths and Science for the overall development of a student."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/affordable_price"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Available in affordable Prices."
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="The team ERA is on a mission to provide service at affordable prices to help the students in this pandemic situation and we also have a Scholarship test through which students grab an opportunity to learn with our faculty."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/refund_icon"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Refund Policy."
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="We are committed to provide the best Assistant to Redefine Education but after enrolling with ERA if found that you are unable to continue, we have Refund Policy for you with a cancellation charge i.e. Rs.299 + Amount of class you attend till date."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Awe-inspiring Faculty"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="50dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:padding="10dp"
+                            android:src="@drawable/mehak" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Mehak | Maths Trainer"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="NIT, Kurukshetra"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="normal"
+
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:padding="10dp"
+                            android:src="@drawable/khushboo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Khushboo| Science Trainer"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="GATE 2020 AIR 10"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="normal"
+
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:padding="10dp"
+                            android:src="@drawable/varsha" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Varsha| Soft Skill Trainer"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="DU, Delhi"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/tinos"
+
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:padding="10dp"
+                            android:src="@drawable/aishwarya" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Ayswarya Alex | A&amp;LR Trainer"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Kerala, India"
+                            android:textSize="20sp"
+                            android:padding="10dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="normal"
+
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#00ffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#0000ffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tinos"
+                android:padding="10dp"
+                android:text="Get a chance to be the face of our website and Advertisements..."
+                android:textColor="#000000"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Take a scolarship test. Qualify first and second round and win exciting cash prizes and a chance to be the face of our Website. "
+                android:textColor="#8b8989"
+                android:textSize="15dp"
+                android:fontFamily="serif"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Qualify Level 1  and win ₹ 5000"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:fontFamily="@font/tinos"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Qualify Level 2  and win ₹ 8000"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:fontFamily="@font/tinos"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/take_test"
+                android:onClick="taketest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/take_test_button"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="Take Test"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:fontFamily="@font/tinos"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-40dp"
+        android:src="@drawable/scholarship_logo" />
+
+</LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Packs Include..."
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="50dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Class 7 and 8"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="One Subject/Year"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="154 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 9999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="One Subject/ 6Months"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="78 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 5499 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="One Subject/ 3Months"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="40 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 3599 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Yearly Combo Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="310 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 18,999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Half Yearly Combo Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="156 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 11,999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Quaterly Combo Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="80 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 6999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Class 9 and 10"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="One Subject/Year"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="154 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 11,999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="One Subject/ 6Months"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="78 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 6499 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="One Subject/ 3Months"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="40 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 4599 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Yearly Combo Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="310 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 22,999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Half Yearly Combo Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="156 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 12,999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Quaterly Combo Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="80 Lectures"
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 7999 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:fontFamily="serif"
+                                    android:textStyle="italic"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/books"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Summer Offers..."
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Summer Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 7 and 8"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="            "
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 1200 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/sunny"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Summer Offer"
+                            android:textColor="#000000"
+                            android:textSize="40dp"
+                            android:fontFamily="@font/tinos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:text="Class 9 and 10"
+                            android:textColor="#8b8989"
+                            android:padding="10dp"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"/>
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:paddingLeft="10dp"
+                                    android:text="          "
+                                    android:textColor="#8b8989"
+                                    android:textAlignment="textStart"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:padding="20dp"
+                                    android:text="₹ 1500 /- only"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#0000ff"
+                                    android:textSize="20dp"
+                                    android:textStyle="italic"
+                                    android:fontFamily="serif"
+                                    tools:ignore="RtlCompat" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:src="@drawable/sunny"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parents Testimonials"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/View_Pager"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:id="@+id/testimonial_dots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:gravity="center">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-50dp"
+                android:background="#00ffffff"
+                >
+                <Button
+                    android:id="@+id/prev_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="Previous"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:visibility="invisible"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="230dp"
+                    />
+
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:background="#00000000"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    android:layout_gravity="right"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/v_flipper"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Always at Your Service..."
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Acadmic Advisors"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/tinos"
+            android:layout_marginTop="20dp"/>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:padding="10dp"
+                            android:src="@drawable/sourav" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Mr. Sourav Tiwari"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=" Contact No.: 7226860512 "
+                            android:textSize="17sp"
+                            android:textStyle="italic"
+                            android:fontFamily="serif"
+
+
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Email.:  sauravtiwari@era-co.in"
+                            android:textSize="17sp"
+                            android:paddingBottom="10dp"
+                            android:textStyle="italic"
+                            android:fontFamily="serif"
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="300dp"
+                            android:layout_height="350dp"
+                            android:padding="10dp"
+                            android:src="@drawable/abhay" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Mr. Abhay Sharma"
+                            android:textSize="30sp"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/tinos"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=" Contact No.: 9671712583 "
+                            android:textSize="17sp"
+                            android:textStyle="italic"
+                            android:fontFamily="serif"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Email.:  abhaysharma@era-co.in"
+                            android:textSize="17sp"
+                            android:paddingBottom="10dp"
+                            android:textStyle="italic"
+                            android:fontFamily="serif"
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/we_are_hiring_bg">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Yes, We are Hiring!"
+                android:textColor="#ffffff"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/tinos"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="WE WORK TOGETHER, WE EARN TOGETHER"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Web Developer"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Required skills"
+                    android:fontFamily="@font/tinos"
+                    android:textColor="#8b8989"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Javascript, DBMS, Backend handling"
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    />
+
+
+
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Sales"
+                    android:fontFamily="@font/tinos"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Required skills"
+                    android:textColor="#8b8989"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Communications, Prospecting, Social selling, Objection-handling."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    />
+
+
+
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Animation"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Required skills"
+                    android:textColor="#8b8989"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="adobe illustrator, Movely, Animatron, or any other animation  tools."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    />
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Image Editing"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Required skills"
+                    android:textColor="#8b8989"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Adobe Photoshop, Adobe Lightroom, Skylum Luminar, or any other editing tool."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    />
+
+
+
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Teaching"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Required skills"
+                    android:textColor="#8b8989"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/tinos"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Maths, Science, English Grammar, Compute Programming, soft skills and A&amp;LR."
+                    android:textColor="#8b8989"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    />
+
+
+
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/hiringdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/take_test_button"
+                android:padding="10dp"
+                android:onClick="hiringdetails"
+                android:layout_margin="10dp"
+                android:text="Click Here for More Details"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#4F4D48"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="#cdc9c9"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical Team"
+                android:textColor="#696969"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:fontFamily="serif"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faculty"
+                android:textColor="#696969"
+                android:textSize="17dp"
+                android:textStyle="italic"
+                android:fontFamily="serif"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Founders"
+                android:textColor="#696969"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:fontFamily="serif"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ERA-Assistant to Redefine Education"
+                android:textColor="#cdc9c9"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"
+                android:paddingTop="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Strot Private Limited presents ERA to redefine Education for the overall deployment of a student.ERA is an online development of a student.ERA is an online platform for online tutorial sessions,where students can meet up with their needs by using a real-time virtual learning/lesson and can master the basic concepts for clearer vision."
+                android:textColor="#696969"
+                android:textSize="19dp"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/facebook_icon"
+    android:padding="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/instagram_icon"
+                    android:padding="5dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/snapchat_icon"
+                    android:padding="5dp"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/twitter_icon"
+                    android:padding="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ERA2020"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ERA © 2020"
+                android:textAlignment="center"
+                android:textColor="#dccdc0"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:fontFamily="@font/tinos"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

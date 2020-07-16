@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/splashbg">
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/era"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="430dp"
+        android:layout_centerHorizontal="true"
+        android:transitionName="logo_image"/>
+
+    <TextView
+        android:id="@+id/Era"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:layout_marginBottom="160dp"
+        android:text="ERA"
+        android:transitionName="logo_Text"
+        android:textSize="100dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/tinos"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:layout_marginBottom="70dp"
+        android:text="Assistant to Redefined Education"
+        android:textAlignment="center"
+        android:transitionName="logo_Slogan"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:fontFamily="cursive"
+        />
+    <TextView
+        android:id="@+id/ERA2020"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="690dp"
+        android:layout_marginBottom="10dp"
+        android:text="ERA © 2020"
+        android:textAlignment="center"
+        android:textColor="#778899"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:fontFamily="@font/tinos"
+        />
+
+
+
+</RelativeLayout>

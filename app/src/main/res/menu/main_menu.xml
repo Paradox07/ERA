@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_visitwebsite"
+            android:icon="@drawable/visit_web_icon"
+            android:title="Website" />
+    </group>
+
+
+    <item android:title="Courses">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_maths"
+                    android:icon="@drawable/mathematics_icon"
+                    android:title="Mathematics" />
+                <item
+                    android:id="@+id/nav_Science"
+                    android:icon="@drawable/science_icon"
+                    android:title="Science" />
+                <item
+                    android:id="@+id/nav_Apptitude_and_logical_reasoning"
+                    android:icon="@drawable/aptitude_and_logical_reasoning"
+                    android:title="Apptitude and Logical Reasoning" />
+                <item
+                    android:id="@+id/nav_SoftSkills"
+                    android:icon="@drawable/softskills_icon"
+                    android:title="Soft Skills" />
+
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="Features">
+
+        <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_liveclassroom"
+                android:icon="@drawable/live_classroomicon"
+                android:title="Live Classroom" />
+
+
+
+        </group>
+        </menu>
+    </item>
+</menu>

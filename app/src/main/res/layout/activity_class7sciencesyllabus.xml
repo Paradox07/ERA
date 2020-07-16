@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".class7sciencesyllabus"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f5f5f5">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:background="@drawable/homepagebg"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:padding="5dp"
+                android:src="@drawable/courses_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:gravity="start"
+                android:text="Science"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="start"
+                android:text="Syllabus-CBSE Class 7th"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tinos"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-100dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Unit"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:text="Topic"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="1"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="NUTRITION IN PLANTS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="2"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="NUTRITION IN ANIMALS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="3"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="FIBRE TO FABRIC"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="4"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="HEAT"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="5"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="ACIDS, BASES AND SALTS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="6"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="PHYSICAL AND CHEMICAL CHANGES"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="7"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="WEATHER, CLIMATE AND ADAPTATIONS OF ANIMALS OF CLIMATE"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="8"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="WINDS, STORMS AND CYCLONES"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="9"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="SOIL"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="10"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="RESPIRATION IN ORGANISMS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="11"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="TRANSPORTATION IN ANIMALS AND PLANTS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="12"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="REPRODUCTION IN PLANTS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="13"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="MOTION AND TIME"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="14"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="ELECTRIC CURRENT AND ITS EFFECTS"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="15"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="LIGHT"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="16"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="WATER: A PRECIOUS RESOURCE"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="17"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="FORESTS: OUR LIFELINE"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="18"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="WASTE WATER THEORY"
+                        android:textColor="#8b8989"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/tinos" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
